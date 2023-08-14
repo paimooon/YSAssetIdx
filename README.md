@@ -2,7 +2,7 @@
 
 A Parser of a certain anime game's asset index (WIP)
 
-Current target version: 3.5
+Current target version: 4.0
 
 ## Requirements
 

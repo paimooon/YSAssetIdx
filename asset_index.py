@@ -84,6 +84,7 @@ class AssetIndex(KaitaiStruct):
         def _read(self):
             self.block_list = self._io.read_u4le()
             self.magic = self._io.read_u2le()
+            self.magic_2 = self._io.read_u1()
 
 
     class TypeMappingEntry(KaitaiStruct):
@@ -137,6 +138,7 @@ class AssetIndex(KaitaiStruct):
         def _read(self):
             self.path_hash_pre = self._io.read_u4le()
             self.offset = self._io.read_u4le()
+            self.size = self._io.read_u4le()
 
 
     class BlockGroup(KaitaiStruct):

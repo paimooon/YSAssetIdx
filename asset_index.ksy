@@ -147,6 +147,8 @@ types:
         type: u4
       - id: offset
         type: u4
+      - id: size
+        type: u4
         
   block_group:
     doc: List of BLKs in a directory specified by the group_id
@@ -166,3 +168,5 @@ types:
         type: u4
       - id: magic
         type: u2
+      - id: magic_2
+        type: u1
