@@ -1154,15 +1154,15 @@ if __name__ == '__main__':
     answer = []
     with open("match.txt", "r") as file:
         for line in file:
-            answer.append(line.strip())
-    sadge = 0
+            answer.append(line.strip()) # compute hash first instead of below code, this is super slow
+    sadge = 0 # when nothing matches in match.txt
 
     for i in mapped.keys():
 
-        if mapped[i] == "":
+        if mapped[i] == "": # if there's blank text
 
-            for ans in answer:
-                testline = "Data/_ExcelBinOutput/" + ans
+            for ans in answer: # find from match.txt first
+                testline = "Data/_ExcelBinOutput/" + ans # or just put all path data in the match.txt 
                 
                 flag = False
                 for t in typeList:
@@ -1183,7 +1183,7 @@ if __name__ == '__main__':
             continue
 
         flag = False
-        for t in typeList:
+        for t in typeList: # t = ".MiHoYoBinData" for Excel and BinOutput to prevent hash collide
             if compute_name_hash(mapped[i], t) == int(i):
                 # print(f"{i}: {mapped[i]}") 
                 flag = True
