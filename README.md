@@ -4,6 +4,11 @@ A Parser of a certain anime game's asset index (WIP)
 
 Current target version: 4.7 beta
 
+```
+325975 unmatched
+252384/578359 43.64%
+```
+
 ## Requirements
 
 - Python 3
