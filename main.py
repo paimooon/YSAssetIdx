@@ -3,7 +3,7 @@ import json
 
 from asset_index import AssetIndex
 
-ai = AssetIndex.from_file("0000006f.bin")
+ai = AssetIndex.from_file("0000006f")
 
 with open('mapped-updated.json', 'r') as f:
     mappedName = json.load(f)
@@ -83,11 +83,14 @@ assetindex_output = {
     "PreloadBlocks": ai.preload_blocks,
     "PreloadShaderBlocks": ai.preload_shader_blocks,
     "Assets": loadAssets(ai, blockGroupsDict),
-    "SortList": ai.sort_list,
+    # "SortList": ai.sort_list,
 }
 
 with open('output_assetindex.json', 'w', encoding='utf-8') as f:
     json.dump(assetindex_output, f, ensure_ascii=False, indent=4, sort_keys=True)
+
+with open('output_assetindex_minify.json', 'w', encoding='utf-8') as f:
+    json.dump(assetindex_output, f, ensure_ascii=False, sort_keys=True)
 
 with open('output_mapped.json', 'w', encoding='utf-8') as f:
     json.dump(mappedGenerate, f, ensure_ascii=False, indent=4)

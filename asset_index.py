@@ -27,6 +27,7 @@ class AssetIndex(KaitaiStruct):
 
         self.dependency_count = self._io.read_u4le()
         self.magic_31 = self._io.read_u4le()
+        self.magic_32 = self._io.read_u4le()
         self.dependencies = []
         for i in range(self.dependency_count):
             self.dependencies.append(AssetIndex.DependencyInfo(self._io, self, self._root))
@@ -50,11 +51,6 @@ class AssetIndex(KaitaiStruct):
         self.block_infos = []
         for i in range(self.block_info_count):
             self.block_infos.append(AssetIndex.BlockInfo(self._io, self, self._root))
-
-        self.sort_list_count = self._io.read_u4le()
-        self.sort_list = []
-        for i in range(self.sort_list_count):
-            self.sort_list.append(self._io.read_u4le())
 
 
     class BlockInfo(KaitaiStruct):
