@@ -2,7 +2,7 @@
 
 A Parser of a certain anime game's asset index (WIP)
 
-Current target version: 4.7 beta
+Current target version: 4.8 beta
 
 ```
 325893 unmatched
