@@ -2,11 +2,11 @@
 
 A Parser of a certain anime game's asset index (WIP)
 
-Current target version: 5.0 beta
+Current target version: 5.1 beta
 
 ```
-392928 unmatched
-252106/645034 39.08%
+403478 unmatched
+251450/654928 38.39%
 ```
 
 ## Requirements
@@ -29,7 +29,6 @@ python main.py
 - Place new version of `0000006f`
 - Run `main.py`
 - `output_mapped.json` will be generated, fill it yourself
-- Type the Excel name in the `match.txt`, it will automatically find the map
 - Run `check_mapped.py` to check if filled value is correct or not
 - Run `output_to_updated.py`, it will convert `output_mapped.json` to `mapped-updated.json` used in `main.py`
 - Run `main.py` again to get assetindex
