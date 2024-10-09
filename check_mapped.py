@@ -1,7 +1,12 @@
 import hashlib, json
 
 mapped = {
-    "69286664419": "Data/_BinOutput/GCG/Gcg_DeclaredValueSet/Char_Skill_74012",
+    "826070285539": "Data/_BinOutput/Avatar/ConfigAvatar_Manekin_Chasca",
+    "498285959886": "Data/_BinOutput/Avatar/ConfigAvatar_Manekin_MavuikaPre",
+    "154420150922": "Data/_BinOutput/Avatar/ConfigAvatar_Manekin_Olorun",
+    "818503059268": "Data/_BinOutput/Avatar/ConfigAvatar_MavuikaPre",
+    "412561007750": "Data/_BinOutput/Avatar/ConfigAvatar_Olorun",
+    "1048750020482": "Data/_BinOutput/Ability/Temp/AvatarAbilities/ConfigAbility_Avatar_Olorun",
 }
 
 def compute_name_hash(path, t):

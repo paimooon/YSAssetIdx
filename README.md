@@ -2,11 +2,11 @@
 
 A Parser of a certain anime game's asset index (WIP)
 
-Current target version: 5.1 beta
+Current target version: 5.2 beta
 
 ```
-403478 unmatched
-251450/654928 38.39%
+422343 unmatched
+251530/673873 37.33%
 ```
 
 ## Requirements
