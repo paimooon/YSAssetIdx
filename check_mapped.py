@@ -1,12 +1,18 @@
 import hashlib, json
 
 mapped = {
-    "826070285539": "Data/_BinOutput/Avatar/ConfigAvatar_Manekin_Chasca",
-    "498285959886": "Data/_BinOutput/Avatar/ConfigAvatar_Manekin_MavuikaPre",
-    "154420150922": "Data/_BinOutput/Avatar/ConfigAvatar_Manekin_Olorun",
-    "818503059268": "Data/_BinOutput/Avatar/ConfigAvatar_MavuikaPre",
-    "412561007750": "Data/_BinOutput/Avatar/ConfigAvatar_Olorun",
-    "1048750020482": "Data/_BinOutput/Ability/Temp/AvatarAbilities/ConfigAbility_Avatar_Olorun",
+    "688719560637": "Data/_BinOutput/HomeworldFurnitureSuit/Home_Suite_Exterior_Nt_Build_Iktomisaurus",
+    "185956052726": "Data/_BinOutput/HomeworldFurnitureSuit/Home_Suite_Exterior_Nt_Build_Koholasaurus",
+    "751878815404": "Data/_BinOutput/HomeworldFurnitureSuit/Home_Suite_Exterior_Nt_Build_Market",
+    "584663114425": "Data/_BinOutput/HomeworldFurnitureSuit/Home_Suite_Exterior_Nt_Build_Mine",
+    "971200459757": "Data/_BinOutput/HomeworldFurnitureSuit/Home_Suite_Exterior_Nt_Build_Qucusaurus",
+    "81796283625": "Data/_BinOutput/HomeworldFurnitureSuit/Home_Suite_Exterior_Nt_Build_Tepetlisaurus",
+    "888428371075": "Data/_BinOutput/HomeworldFurnitureSuit/Home_Suite_Exterior_Nt_Build_Yumkasaurus",
+    "678182105808": "Data/_BinOutput/HomeworldFurnitureSuit/Home_Suite_Exterior_Nt_Field_Nature",
+
+    "761500094002": "Data/_BinOutput/HomeworldFurnitureSuit/Home_Suite_Interior_Nt_Room_Hotel",
+    "1091854801032": "Data/_BinOutput/HomeworldFurnitureSuit/Home_Suite_Interior_Nt_Room_Office",
+    "421881998455": "Data/_BinOutput/HomeworldFurnitureSuit/Home_Suite_Interior_Nt_Room_Universal",
 }
 
 def compute_name_hash(path, t):
