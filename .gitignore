@@ -1,6 +1,6 @@
 # big poop
 output_assetindex.json
-output_assetindex_minify.json
+# output_assetindex_minify.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

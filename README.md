@@ -2,16 +2,20 @@
 
 A Parser of a certain anime game's asset index (WIP)
 
-Current target version: 5.5 beta
+Current target version: 6.1 beta
 
 ```
-441995 unmatched
-253669/695664 36.46%
+45196 unmatched
+134657/179853 74.87%
 ```
 
 ## Requirements
 
 - Python 3
+
+## Update after 6.x
+
+We will use `31049741.blk` instead of `31049740.blk`, can grab from the `client_design_data`
 
 ## How to run
 

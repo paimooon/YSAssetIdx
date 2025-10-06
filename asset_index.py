@@ -52,6 +52,11 @@ class AssetIndex(KaitaiStruct):
         for i in range(self.block_info_count):
             self.block_infos.append(AssetIndex.BlockInfo(self._io, self, self._root))
 
+        self.sort_list_count = self._io.read_u4le()
+        self.sort_list = []
+        for i in range(self.sort_list_count):
+            self.sort_list.append(self._io.read_u4le())
+
 
     class BlockInfo(KaitaiStruct):
         """Specifies which assets this specific block contains and their offsets in the BLK file."""

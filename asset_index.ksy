@@ -65,6 +65,13 @@ seq:
     repeat-expr: block_info_count
     doc: Info about distribution of assets in BLKs
     
+  - id: sort_list_count
+    type: u4
+  - id: sort_list
+    type: u4
+    repeat: expr
+    repeat-expr: sort_list_count
+    doc: Info about sort?
     
 types:
   string:
